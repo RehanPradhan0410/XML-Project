@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="Catalog_19031471.css" type="text/css"?>
+<!DOCTYPE Store SYSTEM "./catalog_19031471.dtd">
+
+
+
+<!--
+    Coursework 2
+    XML
+    Author: Rehan Pradhan
+    Date: 1st May 2021
+    Filename: catalog_19031471.xml
+ -->
+
+<!-- Here tag Store is the root element -->
+<Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Catalog_19031471.xsd">
+    <!-- * head tag is the child element of store tag
+         * It stores the logo and basic information of the store -->
+    <head>
+        <!--The Logo tag stores the logo of the Website -->
+        <Logo></Logo>
+        <!--Info tag stores the basic information of the store  --> 
+        <Info>
+            <Storename>RockMandu</Storename>
+            <Telephone>01-6221823</Telephone>
+            <Mobile_no>9813678076</Mobile_no>
+            <Address>Durbarmarg, KTM</Address>
+        </Info>
+        
+    </head>
+    
+    <!--The Music tag is the child element of store tag which stores  
+        the information about the songs and its cover picture-->
+    <Music>
+
+        <!--* Track Tag is a chid element of Music Tag which stores
+            the cover picture and the song's details
+            *  The child elements of track; Group, Album, Director,
+                Producer, Music_Video are optional elements
+            * The Track Element contains an attribute named track_id
+            * The child element of track; Cover_Picture contains
+              an attribute named id
+            * The child element of track; Artist contains an
+              attribute named Featuring
+            * The child element of track; Album contains an attribute
+              named On_Charts
+            * The child element of track; Music_Video contains an
+              attribute named Actor-->
+        <Track track_id="1">
+            <Cover_Picture id="Cover_1"/>
+            <Title>We Don't Talk Anymore (feat.Selena Gomez)</Title>
+            <Artist Featuring="Selena Gomez">Artist: Charlie Puth</Artist>
+            <Album On_Charts="">Album: Nine Track Mind</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 3:38</Duration>
+            <Release_Date>Release Date: 2016</Release_Date>
+            <Plays>Plays: 1,134,298,147</Plays>
+            <Song_Writer>Song Writer: Jacob Kasher</Song_Writer>
+            <Price>Price: $5</Price>
+        </Track>
+
+        <Track track_id="2">
+            <Cover_Picture id="Cover_2"/>
+            <Title>So What</Title>
+            <Artist>Artist: Miles Davis</Artist>
+            <Album On_Charts="No">Album: Kind of Blue</Album>
+            <Genre>Genre: Jazz</Genre>
+            <Duration>Duration: 9:22</Duration>
+            <Release_Date>Release Date: 1959</Release_Date>
+            <Plays>Plays: 233,373</Plays>
+            <Song_Writer>Song Writer: Miles Davis</Song_Writer>
+            <Price>Price: $3</Price>
+        </Track>
+
+        <Track track_id="3">
+            <Cover_Picture id="Cover_3"/>
+            <Title>Should I Stay or Should I Go</Title>
+            <Artist>Artist: Joe Strummer</Artist>
+            <Group>Group: The Clash</Group>
+            <Album On_Charts="No">Album: Combat Rock</Album>
+            <Genre>Genre: Rock</Genre>
+            <Duration>Duration: 3:08</Duration>
+            <Release_Date>Release Date: 1982</Release_Date>
+            <Plays>Plays: 554,081,600</Plays>
+            <Song_Writer>Song Writer: The Clash</Song_Writer>
+            <Price>Price: $1</Price>
+        </Track>
+
+        <Track track_id="4">
+            <Cover_Picture id="Cover_4"/>
+            <Title>Where Are Ü Now</Title>
+            <Artist Featuring="Justin Bieber">Artist: Skrillex and Diplo</Artist>
+            <Album On_Charts="Yes">Album: Skrillex &amp; Diplo present Jack Ü</Album>
+            <Genre>Genre: Dubstep</Genre>
+            <Duration>Duration: 4:10</Duration>
+            <Release_Date>Release Date: 2015</Release_Date>
+            <Plays>Plays: 898,270,428</Plays>
+            <Song_Writer>Song Writer: Skrillex and Diplo</Song_Writer>
+            <Director>Director: Brewer</Director>
+            <Producer>Producer: Candice Dragonas</Producer>
+            <Music_Video Actor="Justin Drew Bieber">Music Video: https://bit.ly/3ub4Ehw</Music_Video>
+            <Website>Website: https://www.jackuofficial.com/</Website>
+            <Price>Price: $6</Price>
+        </Track>
+
+        <Track track_id="5">
+            <Cover_Picture id="Cover_5"/>
+            <Title>Need You Now</Title>
+            <Artist>Artist: Hillary Scott</Artist>
+            <Group>Group: Lady Antebellum</Group>
+            <Genre>Genre: Country Music</Genre>
+            <Duration>Duration: 3:56</Duration>
+            <Release_Date>Release Date: 2010</Release_Date>
+            <Plays>Plays: 215,672,143</Plays>
+            <Song_Writer>Song Writer: Lady Antebellum</Song_Writer>
+            <Producer>Producer: Paul Worley</Producer>
+            <Music_Video>Music Video: https://bit.ly/3uflBYn</Music_Video>
+            <Price>Price: $9.99</Price>
+        </Track>
+
+        <Track track_id="6">
+            <Cover_Picture id="Cover_6"/>
+            <Title>Najeek</Title>
+            <Artist>Artist: Bartika Eam Rai</Artist>
+            <Album On_Charts="Yes">Album: Bimbaakash</Album>
+            <Genre>Genre: Folk</Genre>
+            <Duration>Duration: 5:11</Duration>
+            <Release_Date>Release Date: 2016</Release_Date>
+            <Plays>Plays: 1,056,141</Plays>
+            <Song_Writer>Song Writer: Bartika Eam Rai</Song_Writer>
+            <Producer>Producer: Diwas Gurung</Producer>
+            <Music_Video>Music Video: https://bit.ly/3vD4Qq5</Music_Video>
+            <Price>Price: $2.45</Price>
+        </Track>
+
+        <Track track_id="7">
+            <Cover_Picture id="Cover_7"/>
+            <Title>Fast Car</Title>
+            <Artist>Artist: Tracy Chapman</Artist>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 4:56</Duration>
+            <Release_Date>Release Date: 1988</Release_Date>
+            <Plays>Plays: 462,578,829</Plays>
+            <Song_Writer>Song Writer: Tracy Chapman</Song_Writer>
+            <Producer>Producer: David Kershenbaum</Producer>
+            <Price>Price: $9</Price>
+        </Track>
+
+        <Track track_id="8">
+            <Cover_Picture id="Cover_8"/>
+            <Title>Stayin' Alive</Title>
+            <Artist>Artist: Barry Gibb, Robin Gibb <![CDATA[ & ]]> Maurice Gibb</Artist>
+            <Group>Group: Bee Gees</Group>
+            <Album On_Charts="No">Album: Greatest</Album>
+            <Genre>Genre: Disco</Genre>
+            <Duration>Duration: 4:45</Duration>
+            <Release_Date>Release Date: 1977</Release_Date>
+            <Plays>Plays: 508,010,287</Plays>
+            <Song_Writer>Song Writer: Bee Gees</Song_Writer>
+            <Producer>Producer: Karl Richardson</Producer>
+            <Price>Price: $10</Price>
+        </Track>
+
+        <Track track_id="9">
+            <Cover_Picture id="Cover_9"/>
+            <Title>Can't Help Falling In Love</Title>
+            <Artist>Artist: Elvis Presley</Artist>
+            <Album On_Charts="Yes">Album: Blue Hawaii</Album>
+            <Genre>Genre: Classic Rock</Genre>
+            <Duration>Duration: 3:02</Duration>
+            <Release_Date>Release Date: 1961</Release_Date>
+            <Plays>Plays: 420,000,363</Plays>
+            <Song_Writer>Song Writer: Hugo Peretti</Song_Writer>
+            <Price>Price: $4.45</Price>
+        </Track>
+
+        <Track track_id="10">
+            <Cover_Picture id="Cover_10"/>
+            <Title>Last Christmas</Title>
+            <Artist>Artist: George Michael</Artist>
+            <Group>Group: Wham</Group>
+            <Album On_Charts="Yes">Album: Last Christmas</Album>
+            <Genre>Genre: Christmas</Genre>
+            <Duration>Duration: 6:38</Duration>
+            <Release_Date>Release Date: 1986</Release_Date>
+            <Plays>Plays: 9,625,895</Plays>
+            <Song_Writer>Song Writer: George Michael</Song_Writer>
+            <Price>Price: $7</Price>
+        </Track>
+
+        <Track track_id="11">
+            <Cover_Picture id="Cover_11"/>
+            <Title>In The Name of Love</Title>
+            <Artist Featuring="Bebe Rexha">Artist: Martin Garrix</Artist>
+            <Album On_Charts="No">Album: In the Name of Love</Album>
+            <Genre>Genre: Eletronica</Genre>
+            <Duration>Duration: 3:57</Duration>
+            <Release_Date>Release Date: 2016</Release_Date>
+            <Plays>Plays: 1,034,475,176</Plays>
+            <Song_Writer>Song Writer: Ruth-Anne</Song_Writer>
+            <Producer>Producer: Matt Rad</Producer>
+            <Price>Price: $6.50</Price>
+        </Track>
+
+        <Track track_id="12">
+            <Cover_Picture id="Cover_12"/>
+            <Title>Rockstar</Title>
+            <Artist Featuring="21 Savage">Artist: Post Malone</Artist>
+            <Album On_Charts="Yes">Album: 538 Hitzone 85</Album>
+            <Genre>Genre: Rap</Genre>
+            <Duration>Duration: 3:38</Duration>
+            <Release_Date>Release Date: 2018</Release_Date>
+            <Plays>Plays: 2,172,726,784</Plays>
+            <Song_Writer>Song Writer: Austin Post</Song_Writer>
+            <Director>Director: Emil Nava</Director>
+            <Producer>Producer: Tank God</Producer>
+            <Music_Video Actor="Austin Richard Post">Music Video: https://bit.ly/2PK4uyG</Music_Video>
+            <Website>Website: http://www.postmalone.com​</Website>
+            <Price>Price: $5</Price>
+        </Track>
+
+        <Track track_id="13">
+            <Cover_Picture id="Cover_13"/>
+            <Title>Muskurayera</Title>
+            <Artist>Artist: Sushant KC</Artist>
+            <Album On_Charts="Yes">Album: Maya Ma</Album>
+            <Genre>Genre: Romantic</Genre>
+            <Duration>Duration: 3:16</Duration>
+            <Release_Date>Release Date: 2018</Release_Date>
+            <Plays>Plays: 1,030,247</Plays>
+            <Song_Writer>Song Writer: Bishow Pokhrel</Song_Writer>
+            <Price>Price: $5</Price>
+        </Track>
+
+        <Track track_id="14">
+            <Cover_Picture id="Cover_14"/>
+            <Title>Qaafirana</Title>
+            <Artist>Artist: Arijit Singh <![CDATA[ & ]]> Nikhita</Artist>
+            <Album On_Charts="No">Album: Kedarnath</Album>
+            <Genre>Genre: Romantic</Genre>
+            <Duration>Duration: 5:41</Duration>
+            <Release_Date>Release Date: 2019</Release_Date>
+            <Plays>Plays: 31,028,423</Plays>
+            <Song_Writer>Song Writer: Amitabh Bhattacharya</Song_Writer>
+            <Director>Director: Abhishek Kapoor</Director>
+            <Producer>Producer: Ronnie Screwvala</Producer>
+            <Price>Price: $6.55</Price>
+        </Track>
+
+        <Track track_id="15">
+            <Cover_Picture id="Cover_15"/>
+            <Title>The Nights</Title>
+            <Artist>Artist: Avicii</Artist>
+            <Album On_Charts="No">Album: The Days/Nights</Album>
+            <Genre>Genre: Folktronica</Genre>
+            <Duration>Duration: 2:56</Duration>
+            <Release_Date>Release Date: 2015</Release_Date>
+            <Plays>Plays: 744,184,283</Plays>
+            <Song_Writer>Song Writer: Tim Bergling</Song_Writer>
+            <Producer>Producer: Arash Pournouri</Producer>
+            <Website>Website: https://avicii.lnk.to/Channel</Website>
+            <Price>Price: $11</Price>
+        </Track>
+
+        <Track track_id="16">
+            <Cover_Picture id="Cover_16"/>
+            <Title>Waka Waka (This Time for Africa)</Title>
+            <Artist>Artist: Shakira</Artist>
+            <Album On_Charts="No">Album: Sale el Sol</Album>
+            <Genre>Genre: Pop</Genre>
+            <Duration>Duration: 3:22</Duration>
+            <Release_Date>Release Date: 2010</Release_Date>
+            <Plays>Plays: 405,225,296</Plays>
+            <Song_Writer>Song Writer: John Hill</Song_Writer>
+            <Director>Director: Marcus Raboy</Director>
+            <Producer>Producer: John Hill</Producer>
+            <Price>Price: $9.99</Price>
+        </Track>
+
+
+
+    
+    </Music>
+
+    <!--It stores the information for the footer -->
+    <Footer>
+        Rockmandu All Rights Reserved 2021 ©
+    </Footer>
+
+</Store>

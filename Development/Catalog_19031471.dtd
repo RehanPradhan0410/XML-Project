@@ -1,0 +1,40 @@
+<?xml encoding="UTF-8"?>
+<!--Declaring Elements in DTD-->
+<!ELEMENT Store (head,Music,Footer)>
+<!ELEMENT head (Logo,Info)>
+<!ELEMENT Music (Track)+>
+<!ELEMENT Footer (#PCDATA)>
+<!ELEMENT Logo EMPTY>
+<!ELEMENT Info (Storename,Telephone,Mobile_no,Address)>
+<!ELEMENT Track (Cover_Picture,Title,Artist,Group?,Album?,Genre,
+                 Duration,Release_Date,Plays,Song_Writer,Director?,
+                 Producer?,Music_Video?,Website?,Price)>
+<!ELEMENT Storename (#PCDATA)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Mobile_no (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Cover_Picture EMPTY>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT Group (#PCDATA)>
+<!ELEMENT Album (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT Release_Date (#PCDATA)>
+<!ELEMENT Plays (#PCDATA)>
+<!ELEMENT Song_Writer (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Music_Video (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+
+<!--Declaring Attributes in DTD-->
+<!ATTLIST Store 
+xmlns:xsi CDATA #REQUIRED
+xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ATTLIST Track track_id CDATA #REQUIRED>
+<!ATTLIST Cover_Picture id CDATA #REQUIRED>
+<!ATTLIST Artist Featuring CDATA #IMPLIED>
+<!ATTLIST Album On_Charts CDATA #REQUIRED>
+<!ATTLIST Music_Video Actor CDATA #IMPLIED>

@@ -1,0 +1,77 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Store" type="StoreType"/>
+  <xs:complexType name="InfoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Storename"/>
+      <xs:element type="xs:string" name="Telephone"/>
+      <xs:element type="xs:long" name="Mobile_no"/>
+      <xs:element type="xs:string" name="Address"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="headType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Logo"/>
+      <xs:element type="InfoType" name="Info"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Cover_PictureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ArtistType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Featuring" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AlbumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="On_Charts" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TrackType">
+    <xs:sequence>
+      <xs:element type="Cover_PictureType" name="Cover_Picture"/>
+      <xs:element type="xs:string" name="Title"/>
+      <xs:element type="ArtistType" name="Artist"/>
+      <xs:element type="xs:string" name="Group" minOccurs="0"/>
+      <xs:element type="AlbumType" name="Album" minOccurs="0"/>
+      <xs:element type="xs:string" name="Genre"/>
+      <xs:element type="xs:string" name="Duration"/>
+      <xs:element type="xs:string" name="Release_Date"/>
+      <xs:element type="xs:string" name="Plays"/>
+      <xs:element type="xs:string" name="Song_Writer"/>
+      <xs:element type="xs:string" name="Director" minOccurs="0"/>
+      <xs:element type="xs:string" name="Producer" minOccurs="0"/>
+      <xs:element type="Music_VideoType" name="Music_Video" minOccurs="0"/>
+      <xs:element type="xs:string" name="Website" minOccurs="0"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="track_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="Music_VideoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Actor" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MusicType">
+    <xs:sequence>
+      <xs:element type="TrackType" name="Track" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StoreType">
+    <xs:sequence>
+      <xs:element type="headType" name="head"/>
+      <xs:element type="MusicType" name="Music"/>
+      <xs:element type="xs:string" name="Footer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

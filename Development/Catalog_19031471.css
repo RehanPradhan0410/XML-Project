@@ -1,0 +1,439 @@
+/* Importing Downloaded Fonts */
+@font-face {
+    src: url(./Fonts/CircularSpotifyTxT-Bold.ttf);
+    font-family: nos;
+}
+
+@font-face {
+    src: url(./Fonts/Rene-Bieder-Milliard-Book.ttf);
+    font-family: Ren;
+}
+
+@font-face {
+    src: url(./Fonts/Helvetica-86-Heavy-Italic.ttf);
+    font-family: hev;
+}
+
+
+/* To adjust the Store name with the Logo */
+Info Storename
+{
+    position:absolute;
+    right: 156%;
+    font-family: hev;
+    font-size: 2rem;
+}
+
+/* Settimg the background color for the body content Store tag */
+Store
+{
+    display:block;
+    background-color: rgb(41, 65, 171);
+    color: #F4F4F4;
+}
+
+/* Creating footer and setting the position for it */
+Footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+/* For the top navigation of the website */
+head
+{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    max-width: 100%;
+}
+
+/* Importing the logo and adjusting its properties */
+Logo
+{
+    background-image: url(./Pictures/Logo.png);
+    background-size: 72px;
+    height: 70px;
+    width: 75px; 
+    margin-top: 14px;
+    margin-left: 60px;
+}
+
+/* Setting the properties for header information such as store name, telephone no, mobile no
+ and address */
+Info
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    position: relative;
+}
+
+/* Setting the properties for child elements of Info */
+Storename,Address,Telephone,Mobile_no
+{
+    margin-top: 35px;
+    margin-left: -80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 21px;
+}
+
+/* Using flex wrap property which helps to wrap the content in a flexbox in a responsive way*/
+Music
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* For Creating floating box */
+Track 
+{
+    border: 4px groove black;
+    font-family: ren;
+	display: grid;
+	background: rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+	border-radius: 20px;
+	transform: rotate(-0.1deg);
+	font-size: 28px;
+	margin: 20px;
+	width: 550px;
+	height: 940px;
+	padding: 20px;
+	color: #f4f4f4;
+    grid-gap: 5px;
+}
+
+
+/* For the title of the track. setting its font and font color */
+Title
+{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(26, 177, 177);
+    font-size: 32px;
+    font-family: nos;
+}
+
+/* For the artist of the track, setting its font size and font weight */
+Artist
+{
+    font-weight: bold;
+    font-size: 29px;
+}
+
+
+/*Creating a list for the track details */
+Group, Album, Genre, Duration, 
+Release_Date, Plays, Song_Writer, Director, 
+Producer, Music_Video, Website, Price
+{
+    display: list-item;
+    list-style-type: square;
+    margin-left: 5%;
+}
+
+/* For changing the cursor to pointer when hovering over the website link  */
+Website 
+{
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+/* Hover effect for website link */
+Website:hover
+{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+/* For changing the cursor to pointer when hovering over the Music Video link  */
+Music_Video 
+{
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+/* Hover effect for Music Video link */
+Music_Video:hover
+{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+
+/* Setting the properties for cover picture of a track */
+#Cover_1 {
+	background-image: url(./Pictures/Track_1.jpg);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_2 {
+	background-image: url(./Pictures/Track_2.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+#Cover_3 {
+	background-image: url(./Pictures/Track_3.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+#Cover_4 {
+	background-image: url(./Pictures/Track_4.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+#Cover_5 {
+	background-image: url(./Pictures/Track_5.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_6 {
+	background-image: url(./Pictures/Track_6.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_7 {
+	background-image: url(./Pictures/Track_7.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_8 {
+	background-image: url(./Pictures/Track_8.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_9 {
+	background-image: url(./Pictures/Track_9.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_10 {
+	background-image: url(./Pictures/Track_10.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_11 {
+	background-image: url(./Pictures/Track_11.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_12 {
+	background-image: url(./Pictures/Track_12.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_13 {
+	background-image: url(./Pictures/Track_13.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_14 {
+	background-image: url(./Pictures/Track_14.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+#Cover_15 {
+	background-image: url(./Pictures/Track_15.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+
+#Cover_16 {
+	background-image: url(./Pictures/Track_16.png);
+    background-size: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 20px;
+    font-size: 100px;
+}
+
+
+/* Creating hover effect for cover pictures of all  16 tracks */
+
+#Cover_1:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_2:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_3:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_4:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_5:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_6:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_7:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_8:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_9:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_10:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#Cover_11:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_12:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_13:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_14:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#Cover_15:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+#Cover_16:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
